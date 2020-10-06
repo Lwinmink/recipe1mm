@@ -1,0 +1,325 @@
+/*Navigation*/
+.menu{
+    background-color: #f8f9fa;
+    box-shadow: 0 10px 20px rgba(0,0,0,.3);  
+  }
+
+.menu .navbar-nav .nav-item .nav-link {
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+.menu .navbar-nav .nav-item .nav-link:hover {
+  color: green;
+}
+.menu .navbar-nav .nav-item:last-child .nav-link {
+  padding-right: 0;
+}
+/*__________________________________________*/
+.container-fluid {
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-30%, -50%);
+}
+
+h4 {
+  color: white;
+  text-shadow: 0px 0px 20px #000000;
+}
+
+body {
+ font-family: 'Montserrat', sans-serif;
+}
+
+.black-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%)}
+.btn-grad {
+    margin: 0px;
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+          }
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+          }
+
+/*----  Main Style  ----*/
+#cards_landscape_wrap-2{
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_landscape_wrap-2 .container{
+  padding-top: 0px; 
+  padding-bottom: 30px;
+}
+#cards_landscape_wrap-2 a{
+  text-decoration: none;
+  outline: none;
+}
+#cards_landscape_wrap-2 .card-flyer {
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box{
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(235, 144, 101, 0.40);
+  border-radius: 5px;
+}
+#cards_landscape_wrap-2 .card-flyer .image-box img{
+  -webkit-transition:all .9s ease; 
+  -moz-transition:all .9s ease; 
+  -o-transition:all .9s ease;
+  -ms-transition:all .9s ease; 
+  width: 100%;
+  height: 200px;
+}
+#cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+  opacity: 0.7;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+#cards_landscape_wrap-2 .card-flyer .text-box{
+  text-align: center;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+  padding: 30px 18px;
+}
+#cards_landscape_wrap-2 .card-flyer{
+  background: #FFFFFF;
+  margin-top: 60px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px  rgba(235, 144, 101, 0.40);
+}
+#cards_landscape_wrap-2 .card-flyer:hover{
+  background: #fff;
+  box-shadow: 0px 15px 26px  rgba(235, 144, 101, 0.40);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px; 
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_landscape_wrap-2 .card-flyer .text-box h6{
+  margin-top: 0px;
+  margin-bottom: 4px; 
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #E0283E;
+}
+
+/*Divider*/
+hr.divider {
+  top: 10px;
+  max-width: 10.25rem;
+  border-width: 0.2rem;
+  border-color: orange;
+}
+
+hr.item-divider {
+  max-width: 5.25rem;
+  border-width: 0.1rem;
+  border-color: orange;
+}
+
+/*Contact in home page*/
+.contact{
+  background-image: url(Img/bg.jpg);
+  position: relative;
+  z-index: 1;
+}
+.contact::before{
+  background: #000000;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/*------------------------------------------*/
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+.tile
+{
+  width:380px;
+  height:380px;
+  margin:10px;
+  background-color: orange;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+  
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding:30px;
+  height:calc(100% - 60px);
+}
+.tile h1
+{
+ 
+  font-weight:300;
+  margin:0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+.tile h2
+{
+  font-weight:100;
+  margin:20px 0 0 0;
+  font-style:italic;
+   transform: translateX(200px);
+}
+.tile p
+{
+  font-weight:300;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+.animate-text
+{
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+.tile:hover
+{
+/*   background-color:#99aeff; */
+box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
+  transform:scale(1.05);
+}
+.tile:hover img
+{
+  opacity: 0.2;
+}
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+.dots
+{
+  position:absolute;
+  bottom:20px;
+  right:30px;
+  margin: 0 auto;
+  width:30px;
+  height:30px;
+  color:currentColor;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  
+}
+
+.dots span
+{
+    width: 5px;
+    height:5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display:block;
+  opacity:0;
+  transition: transform 0.4s ease-out, opacity 0.5s ease;
+  transform: translateY(30px);
+ 
+}
+
+.tile:hover span
+{
+  opacity:1;
+  transform:translateY(0px);
+}
+
+.dots span:nth-child(1)
+{
+   transition-delay: 0.05s;
+}
+.dots span:nth-child(2)
+{
+   transition-delay: 0.1s;
+}
+.dots span:nth-child(3)
+{
+   transition-delay: 0.15s;
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
